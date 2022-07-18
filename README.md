@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   <h1>Brainfried - A brainfuck compiler<h1/>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ScriptLineStudios/Brainfried">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ScriptLineStudios/Brainfried">
@@ -10,7 +10,7 @@
     
 
 
-<div align="center">
+<div>
   <h1>Setup</h1>
   To get started. Install <a href="https://www.nasm.us/">nasm<a/> for your linux distro
 </div>
