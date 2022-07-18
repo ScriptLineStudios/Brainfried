@@ -13,16 +13,16 @@
 <div align="center">
   <h1>Setup</h1>
   To get started. Install <a href="https://www.nasm.us/">nasm<a/> for your linux distro
-  <br>
-    <pre>
-          1. git clone https://github.com/ScriptLineStudios/Brainfried.git
-          2. cd Brainfried
-          3. pip install .
-          4. You can now use the command: "brainfry" for any brainfuck file. Example:
-          5. brainfry -r examples/fibb.b
-          6. -r is used to run the generated assembly
-    </pre>
-  </br>
 </div>
+<br>
+<pre>
+      1. git clone https://github.com/ScriptLineStudios/Brainfried.git
+      2. cd Brainfried
+      3. pip install .
+      4. You can now use the command: "brainfry" for any brainfuck file. Example:
+      5. brainfry -r examples/fibb.b
+      6. -r is used to run the generated assembly
+</pre>
+</br>
 
 
