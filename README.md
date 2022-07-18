@@ -14,11 +14,9 @@
   <h1>Setup</h1>
   To get started. Install <a href="https://www.nasm.us/">nasm<a/> for your linux distro
   <br>
-    <code>
-        <br>1. git clone https://github.com/ScriptLineStudios/Brainfried.git</br>
-        <br>2. cd Brainfried</br>
-        <br>3. pip install .</br>
-    </code>
+        <code>1. git clone https://github.com/ScriptLineStudios/Brainfried.git</code>
+        <code>2. cd Brainfried</code>
+        <code>3. pip install .</code>
   </br>
 </div>
 
