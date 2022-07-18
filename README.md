@@ -5,7 +5,7 @@
   <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/ScriptLineStudios/Brainfried">
 
   <h1>About</h1>
-    Hello
+    Brainfried is a Brainfuck compiler. Which compiles brainfuck code down into x86_64 assembly which can then be compiled using <a href="https://www.nasm.us/">nasm<a/>
 </div>
     
 
