@@ -5,6 +5,7 @@
   <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/ScriptLineStudios/Brainfried">
 
   <h1>About</h1>
+    Hello
 </div>
     
 
