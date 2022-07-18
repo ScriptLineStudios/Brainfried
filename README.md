@@ -13,13 +13,13 @@
 <div align="center">
   <h1>Setup</h1>
   To get started. Install <a href="https://www.nasm.us/">nasm<a/> for your linux distro
-  <code>
-    <br>
-          <code>1. git clone https://github.com/ScriptLineStudios/Brainfried.git</code>
-          <code>2. cd Brainfried</code>
-          <code>3. pip install .</code>
-    </br>
-  </code>
+  <br>
+    <pre>
+          1. git clone https://github.com/ScriptLineStudios/Brainfried.git
+          2. cd Brainfried
+          3. pip install .
+    </pre>
+  </br>
 </div>
 
 
