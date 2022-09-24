@@ -15,8 +15,6 @@ CLOSE_BRACKET = "]"
 
 INSTRUCTIONS = (MOVE_POINTER_LEFT, MOVE_POINTER_RIGHT, INCREMENT, DECREMENT, OPEN_BRACKET, CLOSE_BRACKET, OUT, IN)
 
-optimize = True
-
 def help():
     print("Usage:")
     print("    python brainfired.py [options] <brainfuck file to compile>:  Compiles brainfuck to assembly")
@@ -51,7 +49,7 @@ def find_bracket_pairs(program):
 
     return bracket_lookup
 
-def generate_asm(program, out, bracket_lookup, groupings):
+def generate_asm(program, out, bracket_lookup, groupings, optimize):
     instruction_pointer =  0
     while instruction_pointer < len(program):
         op = program[instruction_pointer]
@@ -120,7 +118,7 @@ def generate_asm(program, out, bracket_lookup, groupings):
 
         instruction_pointer += 1
 
-def compile(file_path, out_filename):
+def compile(file_path, out_filename, optimize):
     with open(file_path, "r") as in_file:
         lines = in_file.readlines()
         with open(f"{out_filename}.asm", "w") as out:
@@ -150,7 +148,7 @@ def compile(file_path, out_filename):
                 groupings = None
             table = find_bracket_pairs(program)
             
-            generate_asm(program, out, table, groupings)
+            generate_asm(program, out, table, groupings, optimize)
 
             out.write("    mov rax, 60\n")
             out.write("    mov rdi, 0\n")
@@ -164,14 +162,13 @@ def main():
             help()
             exit()
 
-        if "--dont-optimize" in sys.argv:
-            optimize = False
+        optimize = "--dont-optimize" not in sys.argv
 
         file_path = sys.argv[-1]
         out_filename = file_path.split(".")[0]
 
         start_time = time.perf_counter() 
-        compile(file_path, out_filename)
+        compile(file_path, out_filename, optimize)
         print(f"[INFO]: Compilation finished in {time.perf_counter()-start_time} seconds.")
         print(f"[INFO]: Used optimizations = {optimize}")
 

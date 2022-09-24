@@ -1,0 +1,6 @@
+*.egg-info/
+.*env/
+build/
+
+examples/*
+!examples/*.bf
