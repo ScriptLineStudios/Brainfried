@@ -20,7 +20,7 @@
       2. cd Brainfried
       3. pip install .
       4. You can now use the command: "brainfry" for any brainfuck file. Example:
-      5. brainfry -r examples/fibb.b
+      5. brainfry -r examples/fibb.bf
       6. -r is used to run the generated assembly
 </pre>
 </br>
